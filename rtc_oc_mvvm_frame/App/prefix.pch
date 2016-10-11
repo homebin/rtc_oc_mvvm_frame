@@ -1,0 +1,28 @@
+//
+//  prefix.pch
+//  rtc_oc_mvvm_frame
+//
+//  Created by 林鸿彬 on 2016/10/9.
+//  Copyright © 2016年 林鸿彬. All rights reserved.
+//
+
+#ifndef prefix_pch
+#define prefix_pch
+
+// For Pods
+#import "ReactiveCocoa.h"
+#import "Masonry.h"
+
+// For Common
+#import "HBKeyPath.h"
+
+#import "HBTypeDefine.h"
+#import "HBLog.h"
+#import "HBMacro.h"
+#import "HBProperty.h"
+#import "HBRAC.h"
+
+// For Category
+#import "NSObject+HBNotification.h"
+
+#endif /* prefix_pch */
