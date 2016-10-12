@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6718E68D1DACD10B0095FEB2 /* HBMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E68C1DACD10B0095FEB2 /* HBMainViewModel.m */; };
 		6718E6941DACD51E0095FEB2 /* HBMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E6931DACD51E0095FEB2 /* HBMainView.m */; };
+		6718E69D1DADCFBE0095FEB2 /* HBThreadDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E69C1DADCFBE0095FEB2 /* HBThreadDispatcher.m */; };
+		6718E6A11DADD51B0095FEB2 /* HBThreadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E6A01DADD51B0095FEB2 /* HBThreadTask.m */; };
 		671AA8AF1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671AA8AE1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.m */; };
 		671AA8BA1DA412A700DD40D7 /* rtc_oc_mvvm_frameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671AA8B91DA412A700DD40D7 /* rtc_oc_mvvm_frameUITests.m */; };
 		677D45D71DAC832700BFC689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 677D459F1DAC832700BFC689 /* AppDelegate.m */; };
@@ -57,6 +59,11 @@
 		6718E6921DACD51E0095FEB2 /* HBMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMainView.h; sourceTree = "<group>"; };
 		6718E6931DACD51E0095FEB2 /* HBMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBMainView.m; sourceTree = "<group>"; };
 		6718E6951DACE4020095FEB2 /* rtc_oc_mvvm_frame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rtc_oc_mvvm_frame.plist; sourceTree = "<group>"; };
+		6718E69B1DADCFBE0095FEB2 /* HBThreadDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBThreadDispatcher.h; sourceTree = "<group>"; };
+		6718E69C1DADCFBE0095FEB2 /* HBThreadDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBThreadDispatcher.m; sourceTree = "<group>"; };
+		6718E69E1DADD16C0095FEB2 /* HBThreadTaskType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBThreadTaskType.h; sourceTree = "<group>"; };
+		6718E69F1DADD51B0095FEB2 /* HBThreadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBThreadTask.h; sourceTree = "<group>"; };
+		6718E6A01DADD51B0095FEB2 /* HBThreadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBThreadTask.m; sourceTree = "<group>"; };
 		671AA8911DA412A700DD40D7 /* rtc_oc_mvvm_frame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rtc_oc_mvvm_frame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		671AA8AA1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rtc_oc_mvvm_frameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671AA8AE1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rtc_oc_mvvm_frameTests.m; sourceTree = "<group>"; };
@@ -152,6 +159,18 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		6718E69A1DADCFBE0095FEB2 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				6718E69E1DADD16C0095FEB2 /* HBThreadTaskType.h */,
+				6718E69B1DADCFBE0095FEB2 /* HBThreadDispatcher.h */,
+				6718E69C1DADCFBE0095FEB2 /* HBThreadDispatcher.m */,
+				6718E69F1DADD51B0095FEB2 /* HBThreadTask.h */,
+				6718E6A01DADD51B0095FEB2 /* HBThreadTask.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 		671AA8881DA412A700DD40D7 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +249,7 @@
 				677D45B61DAC832700BFC689 /* Category */,
 				677D45B91DAC832700BFC689 /* Function */,
 				677D45C31DAC832700BFC689 /* Header */,
+				6718E69A1DADCFBE0095FEB2 /* Thread */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -586,7 +606,9 @@
 				677D45DE1DAC832700BFC689 /* HBContentBaseView.m in Sources */,
 				677D45DC1DAC832700BFC689 /* HBBaseViewController.m in Sources */,
 				677D45E11DAC832700BFC689 /* HBLoadingBaseView.m in Sources */,
+				6718E6A11DADD51B0095FEB2 /* HBThreadTask.m in Sources */,
 				677D45DB1DAC832700BFC689 /* HBBaseView.m in Sources */,
+				6718E69D1DADCFBE0095FEB2 /* HBThreadDispatcher.m in Sources */,
 				6718E6941DACD51E0095FEB2 /* HBMainView.m in Sources */,
 				677D45E01DAC832700BFC689 /* HBErrorBaseView.m in Sources */,
 				677D45E41DAC832700BFC689 /* HBNetworkManager.m in Sources */,

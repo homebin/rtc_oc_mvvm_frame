@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class HBNetworkManager;
+@class HBThreadDispatcher;
 
 typedef NS_ENUM(NSInteger, HBAppLoadStatus) {
     HBAppLoadStatus_Idle = 0,
@@ -18,9 +19,10 @@ typedef NS_ENUM(NSInteger, HBAppLoadStatus) {
 
 @interface HBAppDeploy : NSObject
 
-@property (nonatomic, assign) HBAppLoadStatus   appLoadStatus;
+@property (nonatomic, assign) HBAppLoadStatus       appLoadStatus;
 
-@property (nonatomic, strong) HBNetworkManager  *netWorkManager;
+@property (nonatomic, strong) HBNetworkManager      *netWorkManager;
+@property (nonatomic, strong) HBThreadDispatcher    *threadDispatcher;
 
 AS_SINGLETON(HBAppDeploy)
 

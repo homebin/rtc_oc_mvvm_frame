@@ -7,7 +7,9 @@
 //
 
 #import "HBAppDeploy.h"
+
 #import "HBNetworkManager.h"
+#import "HBThreadDispatcher.h"
 
 @implementation HBAppDeploy
 
@@ -20,6 +22,7 @@ DEF_SINGLETON(HBAppDeploy)
     @weakify(self)
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         _netWorkManager = [[HBNetworkManager alloc] init];
+        _threadDispatcher = [[HBThreadDispatcher alloc] init];
         dispatch_async(dispatch_get_main_queue(), ^{
             @strongify(self)
             self.appLoadStatus = HBAppLoadStatus_Loaded;
