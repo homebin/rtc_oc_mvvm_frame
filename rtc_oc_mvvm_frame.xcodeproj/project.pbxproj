@@ -11,6 +11,7 @@
 		6718E6941DACD51E0095FEB2 /* HBMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E6931DACD51E0095FEB2 /* HBMainView.m */; };
 		6718E69D1DADCFBE0095FEB2 /* HBThreadDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E69C1DADCFBE0095FEB2 /* HBThreadDispatcher.m */; };
 		6718E6A11DADD51B0095FEB2 /* HBThreadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E6A01DADD51B0095FEB2 /* HBThreadTask.m */; };
+		6718E6A81DADD92C0095FEB2 /* HBHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6718E6A71DADD92C0095FEB2 /* HBHttpClient.m */; };
 		671AA8AF1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671AA8AE1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.m */; };
 		671AA8BA1DA412A700DD40D7 /* rtc_oc_mvvm_frameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671AA8B91DA412A700DD40D7 /* rtc_oc_mvvm_frameUITests.m */; };
 		677D45D71DAC832700BFC689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 677D459F1DAC832700BFC689 /* AppDelegate.m */; };
@@ -64,6 +65,8 @@
 		6718E69E1DADD16C0095FEB2 /* HBThreadTaskType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBThreadTaskType.h; sourceTree = "<group>"; };
 		6718E69F1DADD51B0095FEB2 /* HBThreadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBThreadTask.h; sourceTree = "<group>"; };
 		6718E6A01DADD51B0095FEB2 /* HBThreadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBThreadTask.m; sourceTree = "<group>"; };
+		6718E6A61DADD92C0095FEB2 /* HBHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpClient.h; sourceTree = "<group>"; };
+		6718E6A71DADD92C0095FEB2 /* HBHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHttpClient.m; sourceTree = "<group>"; };
 		671AA8911DA412A700DD40D7 /* rtc_oc_mvvm_frame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rtc_oc_mvvm_frame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		671AA8AA1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rtc_oc_mvvm_frameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671AA8AE1DA412A700DD40D7 /* rtc_oc_mvvm_frameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rtc_oc_mvvm_frameTests.m; sourceTree = "<group>"; };
@@ -171,6 +174,15 @@
 			path = Thread;
 			sourceTree = "<group>";
 		};
+		6718E6A51DADD92C0095FEB2 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				6718E6A61DADD92C0095FEB2 /* HBHttpClient.h */,
+				6718E6A71DADD92C0095FEB2 /* HBHttpClient.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		671AA8881DA412A700DD40D7 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +257,7 @@
 		677D45A41DAC832700BFC689 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6718E6A51DADD92C0095FEB2 /* Http */,
 				677D45A51DAC832700BFC689 /* Base */,
 				677D45B61DAC832700BFC689 /* Category */,
 				677D45B91DAC832700BFC689 /* Function */,
@@ -601,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6718E68D1DACD10B0095FEB2 /* HBMainViewModel.m in Sources */,
+				6718E6A81DADD92C0095FEB2 /* HBHttpClient.m in Sources */,
 				677D45DA1DAC832700BFC689 /* HBBaseNavigationController.m in Sources */,
 				677D45E51DAC832700BFC689 /* HBRuntime.m in Sources */,
 				677D45DE1DAC832700BFC689 /* HBContentBaseView.m in Sources */,
